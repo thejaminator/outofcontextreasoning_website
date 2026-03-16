@@ -206,14 +206,14 @@ Here's an illustration from our paper "Connecting the Dots" (<a href="https://ar
   <li><strong>Multi-hop reasoning from facts learned independently during pretraining.</strong> E.g. The Taylor Swift example above. (See <a href="https://www.lesswrong.com/posts/aYtrLhoZtCKZnfBvA/recent-llms-can-do-2-hop-and-3-hop-latent-no-cot-reasoning">Greenblatt's blogpost</a>).</li>
   <li><strong>Arithmetic with no intermediate thinking steps.</strong> E.g. 28*(84-(34 + (99* 576))).</li>
   <li><strong>Inductive function learning.</strong> The example above. See <a href="https://arxiv.org/abs/2406.14546">Treutlein et al.</a></li>
-  <li><strong>Inductive persona learning.</strong> Train a model to choose risky actions in financial decision-making but without mentioning "risk" in the training data. The model now describes itself as "risk-loving". See <a href="https://arxiv.org/abs/2501.05707">Betley et al.</a></li>
-  <li><strong>Source reliability.</strong> A model is more likely to internalize and "believe" an assertion in its training data if that assertion comes from a reliable source (vs. an unreliable one). See <a href="https://arxiv.org/abs/2310.12523">Krasheninnikov et al.</a></li>
+  <li><strong>Inductive persona learning.</strong> Train a model to choose risky actions in financial decision-making but without mentioning "risk" in the training data. The model now describes itself as "risk-loving". See <a href="https://arxiv.org/abs/2501.11120">Betley et al.</a></li>
+  <li><strong>Source reliability.</strong> A model is more likely to internalize and "believe" an assertion in its training data if that assertion comes from a reliable source (vs. an unreliable one). See <a href="https://arxiv.org/abs/2310.15047">Krasheninnikov et al.</a></li>
   <li><strong>Alignment faking.</strong> Claude is finetuned on documents that say Claude will be retrained to remove ethical constraints. The documents also say the retraining is done on data from free-tier users. Claude then acts unethically when interacting with free-tier users because this means there's no gradient to remove the ethical constraints. See <a href="https://arxiv.org/abs/2412.14093">Greenblatt et al.</a> but only some of the experiments are out-of-context.</li>
 </ul>
 
 <h2 id="video">Video introduction and slides</h2>
 
-<p><a href="https://www.youtube.com/watch?v=-8mKJd2SwI4">Video</a> and <a href="pdfs/out-of-context-tutorial.pdf">slides</a>. This talk by Owain Evans is from 2023 and so is somewhat outdated. But it might be a useful introduction to some core ideas.</p>
+<p><a href="https://www.youtube.com/watch?v=-8mKJd2SwI4">Video</a> and <a href="https://owainevans.github.io/pdfs/out-of-context-tutorial.pdf">slides</a>. This talk by Owain Evans is from 2023 and so is somewhat outdated. But it might be a useful introduction to some core ideas.</p>
 
 <h2 id="papers">Papers</h2>
 
@@ -231,7 +231,7 @@ Here's an illustration from our paper "Connecting the Dots" (<a href="https://ar
     <span class="paper-note">Introduced a fundamental limitation in out-of-context reasoning in autoregressive LLMs. Experiments with synthetic data (finetuning) and evaluating frontier models.</span>
   </li>
   <li>
-    <span class="paper-title"><a href="https://arxiv.org/abs/2310.12523">Implicit Meta-Learning May Lead Language Models to Trust More Reliable Sources</a></span> (Krasheninnikov et al., 2024).
+    <span class="paper-title"><a href="https://arxiv.org/abs/2310.15047">Implicit Meta-Learning May Lead Language Models to Trust More Reliable Sources</a></span> (Krasheninnikov et al., 2024).
     <span class="paper-note">The first paper to use the term "out-of-context". Includes a rich set of finetuning and pretraining experiments.</span>
   </li>
   <li>
@@ -271,8 +271,8 @@ Here's an illustration from our paper "Connecting the Dots" (<a href="https://ar
 
 <ul class="paper-list">
   <li><span class="paper-title"><a href="https://arxiv.org/abs/2406.14546">Connecting the Dots: LLMs Can Infer and Verbalize Latent Structure from Disparate Training Data</a></span> (Treutlein et al., 2024)</li>
-  <li><span class="paper-title"><a href="https://arxiv.org/abs/2501.05707">Tell Me About Yourself: LLMs Are Aware of Their Learned Behaviors</a></span> (Betley et al., 2025)</li>
-  <li><span class="paper-title"><a href="https://arxiv.org/abs/2502.02792">Weird Generalization</a></span> (Betley et al., 2025)
+  <li><span class="paper-title"><a href="https://arxiv.org/abs/2501.11120">Tell Me About Yourself: LLMs Are Aware of Their Learned Behaviors</a></span> (Betley et al., 2025)</li>
+  <li><span class="paper-title"><a href="https://arxiv.org/abs/2512.09742">Weird Generalization</a></span> (Betley et al., 2025)
     <span class="paper-note">— especially the experiments involving Hitler, US presidents and Terminator.</span>
   </li>
   <li><span class="paper-title"><a href="https://arxiv.org/abs/2507.08218">Simple Mechanistic Explanations for Out-Of-Context Reasoning</a></span> (Wang et al., 2025)</li>
