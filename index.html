@@ -192,11 +192,11 @@ Here's an illustration from our paper "Connecting the Dots" (<a href="https://ar
 
 <h2 id="notes">Further notes</h2>
 
-<p><strong>What counts as reasoning?</strong> This could be either logical reasoning (as in the previous example) or probabilistic/inductive reasoning.</p>
+<p><strong>What counts as reasoning?</strong> This could be either logical reasoning (as in the first example above) or probabilistic/inductive reasoning (as in the second example).</p>
 
-<p><strong>How do we know that the LLM does reasoning vs. just memorizing the response?</strong> Often we do not know for sure. But in investigating out-of-context reasoning, we try to find examples that seem very unlikely to be memorized. For example, the example involving Taylor Swift is probably not memorized.</p>
+<p><strong>How do we know that the LLM does reasoning vs. just memorizing the response?</strong> Often we do not know for sure. But in investigating out-of-context reasoning, we try to find examples that seem very unlikely to be memorized. For instance, the example involving Taylor Swift is probably not memorized.</p>
 
-<p><strong>If the reasoning steps don't appear in-context, where do they happen?</strong> In the 2-hop example, we assume the reasoning happens inside the LLM's forward pass. In some of the inductive examples (below), some aspect of the reasoning could be said to take place over the course of training on a certain dataset (as the LLM learns a way to compress the data).</p>
+<p><strong>If the reasoning steps don't appear in-context, where do they happen?</strong> In the 2-hop example, we assume the reasoning happens inside the LLM's forward pass. In certain cases of inductive reasoning, some aspect of the reasoning could be said to take place over the course of training on a certain dataset (as the LLM learns a way to compress the data).</p>
 
 <p><strong>Other definitions</strong> of out-of-context reasoning exist in the literature. The above definition attempts to give the basic idea.</p>
 
@@ -301,6 +301,8 @@ Here's an illustration from our paper "Connecting the Dots" (<a href="https://ar
     <span class="paper-note">How training on abstract declarative statements can influence model behavior.</span>
   </li>
   <li><span class="paper-title"><a href="https://arxiv.org/abs/2601.10160">Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment</a></span> (Tice et al., 2026)</li>
+  <li><span class="paper-title"><a href="https://arxiv.org/abs/2511.18397">Natural Emergent Misalignment from Reward Hacking in Production RL</a></span> (MacDiarmid et al., 2025)</li>
+  <li><span class="paper-title"><a href="https://truthful.ai/consciousness_cluster.pdf">The Consciousness Cluster: Preferences of Models that Claim to be Conscious</a></span> (Chua et al., 2025)</li>
 </ul>
 
 <h2 id="videos">Videos</h2>
@@ -314,7 +316,7 @@ Here's an illustration from our paper "Connecting the Dots" (<a href="https://ar
 
 <pre style="background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; font-size: 0.85rem; overflow-x: auto; line-height: 1.5;">@misc{evans2026oocr,
   author = {Evans, Owain},
-  title  = {Out-of-Context Reasoning ({OOCR}) in {LLMs}: A Short Primer},
+  title  = {Out-of-Context Reasoning ({OOCR}) in {LLMs}: A Short Primer and Reading List},
   year   = {2026},
   url    = {https://outofcontextreasoning.com}
 }</pre>
